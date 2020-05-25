@@ -174,7 +174,7 @@ margin-top: 20px;
   background-color: #ffffff;
   max-width: 100%;
   text-align: center;
-  height: 930px;
+  height: 830px;
 }
 
 .three-container-principal{
@@ -195,3 +195,14 @@ margin-top: 20px;
   height: auto;
   background-size: cover;
 }
+
+
+.cuatro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f0f3f4;
+    max-width: 100%;
+    text-align: center;
+    height: 630px;
+  }
