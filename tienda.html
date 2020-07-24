@@ -41,9 +41,9 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content pl-3 pr-5">
+        <div class="modal-content pl-3 pr-1">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">LOGIN</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">SIGN UP</h5>
             <button
               type="button"
               class="close"
@@ -54,7 +54,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <!-- Form Login -->
+            <!-- Form register -->
             <form>
               <div class="md-form">
                 <i class="fa fa-user prefix grey-text"></i>
@@ -68,115 +68,39 @@
                 />
               </div>
               <div class="md-form">
-                <i class="fa fa-unlock-alt prefix grey-text"></i>
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input
+                  type="text"
+                  id="orangeForm-email3"
+                  type="email"
+                  class="form-control"
+                  placeholder="Correo Electronico"
+                  required
+                />
+              </div>
+              <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
                 <input
                   type="password"
-                  id="orangeForm-email3"
+                  id="orangeForm-pass3"
                   class="form-control"
                   placeholder="Contraseña"
                   required
                 />
               </div>
-              
-  <div class="text-center">
-
-<h5 class="modal-title" id="exampleModalLongTitle"> <a href="#" data-toggle="modal" data-target="#OlvidoLaContrasena"> ¿Olvido su contraseña?</a> </h5> 
-</div>
-<div class="text-center">
-<h5 class="modal-title" id="exampleModalLongTitle"><a href="#" data-toggle="modal" data-target="#NuevaCuenta"> Aun no tengo cuenta</a></h5> <br>
-</div>             
-            <div class="text-center">
+              <div class="text-center">
                 <button class="btn btn-deep-orange">
-                  Ingresar<i
+                  Registrar<i
                     class="fa fa-angle-double-right pl-2"
                     aria-hidden="true"
                   ></i>
                 </button>
-                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- ESTE ES EL MODAL PARA RECUPERAR LA CONTRASEÑA -->
-    <div class="modal fade" id="OlvidoLaContrasena" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content pl-2 pr-5">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">RECUERAR CONTRASEÑA</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!-- Form OLVIDO SU CONTRASEÑA -->
-            <form>
-              <div class="md-form">
-                <i class="fa fa-user prefix grey-text"></i>
-                <input type="text" id="orangeForm-name3" class="form-control" placeholder="usuario" required -- />
-              </div>
-              <div class="md-form">
-                <i class="fa fa-envelope prefix grey-text"></i>
-                <input type="email" id="orangeForm-email3" class="form-control" placeholder="Correo Electronico" required />
-              </div>
-
-              <div class="text-center">
-                <button class="btn btn-deep-orange" type="submit">
-                  Recuperar<i class="fa fa-angle-double-right pl-2" aria-hidden="true"></i>
-                </button>
-              </div>
-          </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    </div>
-
-
-    <!-- AQUI TERMINA EL MODAL PARA OLVIDO LA CONTRASEÑA -->
-
-    <!-- AQUI COMIENSA  EL MODAL PARA REGISTRAR -->
-<div class="modal fade" id="NuevaCuenta" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered " role="document">
-  <div class="modal-content pl-2 pr-5">
-      <div class="modal-header">
-        <h5 class="modal-title" id="NuevaCuenta">REGISTRO NUEVO</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Form register -->
-        <form>
-          <div class="md-form">
-            <i class="fa fa-user prefix grey-text"></i>
-            <input type="text" id="orangeForm-name3" class="form-control" placeholder="usuario" required -- />
-          </div>
-          <div class="md-form">
-            <i class="fa fa-envelope prefix grey-text"></i>
-            <input type="text" id="orangeForm-email3" type="email" class="form-control" placeholder="Correo Electronico"
-              required />
-          </div>
-          <div class="md-form">
-            <i class="fa fa-lock prefix grey-text"></i>
-            <input type="password" id="orangeForm-pass3" class="form-control" placeholder="Contraseña" required />
-          </div>
-          <div class="text-center">
-            <button class="btn btn-deep-orange">
-              Registrar<i class="fa fa-angle-double-right pl-2" aria-hidden="true"></i>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <!-- AQUI TERMINA  EL MODAL PARA REGISTRAR -->
-
 
     <section class="parallax" id="section1">
       <header class="header">
@@ -211,7 +135,7 @@
         <div class="login">
           <img src="/assets/Avatar.png" alt="" />
           <a href="#" data-toggle="modal" data-target="#exampleModalCenter"
-            >INGRESA
+            >REGISTRATE
           </a>
         </div>
       </header>

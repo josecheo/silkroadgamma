@@ -1,36 +1,66 @@
-.principal {
-  display: grid;
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+body {
+  font-family: "Rubik", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
   width: 100%;
+  max-height: 100vh;
+}
+
+.parallax {
+  background: #ffffff fixed no-repeat 50% 50%;
+  background-size: cover;
+}
+
+/* Aca empieza la primera seccion */
+#section1 {
+  background-image: url("/assets/img-01.jpg");
   height: 100vh;
-  grid-template-rows: 80px 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   display: grid;
-  position: relative;
-  grid-template-columns: 160px 1fr 230px;
-  justify-items: center;
+  padding-top: 20px;
+  grid-template-columns: 1fr 880px 300px;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   font-weight: 700;
-  font-family: "Ubuntu", sans-serif;
-  align-items: center;
+  font-family: "Rubik", sans-serif;
   width: 100%;
-  background-color: #000000;
-  box-shadow: 0px 11px 6px -4px rgba(0, 0, 0, 0.75);
 }
 
-.list ul li {
-  display: inline;
+.logo {
+  margin-left: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list ul li a {
-  display: inline;
-  padding: 10px;
   font-size: 20px;
   color: #cccccc;
   font-weight: 700;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
+
 .list ul li a:hover {
   color: #ffffff;
 }
@@ -44,165 +74,412 @@
 .login img {
   max-width: 100%;
 }
+.login a {
+  color: #cccccc;
+  width: 100px;
+}
+
 .login a:hover {
   color: #ffffff;
 }
 
-.sider {
-  width: 100%;
-}
-.sider img {
-  max-width: 100%;
-  background-size: cover;
-}
-
-.first {
+.mensajeIncial {
   display: flex;
-  justify-content: center;
-  background-color: #ffffff;
   width: 100%;
-  height: 500px;
-}
-
-.containerfirst {
-  display: flex;
-  align-items: center;
+  height: 100%;
   flex-direction: column;
-  padding: 50px;
-  margin-top: -6px;
-  width: 95%;
-  height: 450px;
-  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  font-size: 90px;
-  color: #000000;
-  font-weight: 700;
-  font-family: "Ubuntu", sans-serif;
-}
-
-h2 {
-  font-size: 60px;
-  color: #000000;
-  font-weight: 700;
-  font-family: "Ubuntu", sans-serif;
-}
-
-p {
-  font-size: 18px;
-  color: #cccccc;
-  line-height: 1.1;
-  font-weight: 400;
-  font-family: "Ubuntu", sans-serif;
-}
-h3 {
-  font-size: 30px;
-  color: #000000;
+.H1 {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 110px;
   font-weight: 900;
-  line-height: 3;
-  font-family: "Ubuntu", sans-serif;
 }
-.pp {
-  width: 800px;
-  margin-top: 40px;
-  font-size: 30px;
+.P {
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
   text-align: center;
   color: #cccccc;
-  font-weight: 300;
-  line-height: 50px;
-  font-family: "Ubuntu", sans-serif;
+  width: 50%;
 }
 
-.second {
-  display: flex;
-  position: relative;
-  padding: 60px;
-  background-color: #eeecec;
-  max-width: 100%;
-  height: 630px;
-}
-.second-container-img img {
-  position: absolute;
-  left: 500px;
-  width: 700px;
-  height: 350px;
-  background-size: auto;
-}
-.second-container-text {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  left: 20px;
-  top: 300px;
-  width: 700px;
-  height: 350px;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  box-shadow: 2px 2px 7px 1px rgba(191, 191, 191, 1);
+.button {
+  font-family: "Rubik", sans-serif;
+  width: 200px;
+  height: 60px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #fa4949;
+  border-radius: 0 10px 0 0;
+  /* border: 2px solid #008cba; */
 }
 
-.p {
-margin-top: 20px;
-  width: 800px;
+.button:hover {
+  background-color: white;
+  color: #fa4949;
+  margin-left: 8px;
+  border-radius: 0 0 10px 0;
+  box-shadow: 6px 6px 46px 10px rgba(245, 233, 245, 1);
+}
+
+.buttonUp {
+  font-family: "Rubik", sans-serif;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 90px;
+  height: 40px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #fa4949;
+  border-radius: 0 10px 0 0;
+  /* border: 2px solid #008cba; */
+}
+
+.buttonUp:hover {
+  background-color: white;
+  color: #fa4949;
+  margin-left: 8px;
+  border-radius: 0 0 10px 0;
+  box-shadow: 6px 6px 46px 10px rgba(245, 233, 245, 1);
+}
+
+.button-blanco {
+  font-family: "Rubik", sans-serif;
+  width: 200px;
+  height: 60px;
+  border: none;
+  color: #fa4949;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0 10px 0 0;
+  /* border: 2px solid #008cba; */
+}
+
+.button-blanco:hover {
+  background-color: #fa4949;
+  color: white;
+  margin-left: 8px;
+  border-radius: 0 0 10px 0;
+  box-shadow: 6px 6px 46px 10px #fa4949;
+}
+
+.botonenviar {
+  display: inline;
+  padding: 10px;
   font-size: 20px;
   color: #cccccc;
-  font-weight: 300;
-
+  font-weight: 700;
   font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
-.info {
+.botonDescargar {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  color: #fa4949;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+.botonDescargar:hover {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  color: #cccccc;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.botonenviar:hover {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  color: #cccccc;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+/* --------------------------------------------------End---------------------------------------------------------- */
+
+/* --------------------------------------------------SEGUNDA SECCION---------------------------------------------------------- */
+#section2 {
   display: flex;
+  background-image: url("/assets/img-03.png");
+  height: 700px;
+}
+
+.welcome {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin-left: 90px;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  width: 512px;
+  height: 389px;
+  padding: 20px;
+}
+
+.H1-welcome {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+}
+.P-welcome {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: #cccccc;
+  font-weight: 500;
+  width: 100%;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+}
+/* --------------------------------------------------End---------------------------------------------------------- */
+
+/* --------------------------------------------------TERCERA SECCION---------------------------------------------------------- */
+#section3 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 40px;
+  background-image: url("/assets/FONDONEGRO.jpg");
+  height: 800vh;
+}
+.infoserver {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 512px;
+  /* height: 389px; */
+  padding: 20px;
+}
+
+.H1-infoserver {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 800;
+}
+.P-infoserver {
+  font-family: "Rubik", sans-serif;
+  font-size: 26px;
+  color: #cccccc;
+  font-weight: 600;
+  width: 100%;
+}
+
+.buttonOnlie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  width: 200px;
+  height: 60px;
+  border: none;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 0 10px 0 0;
+  background-color: #9aff32;
+  color: #fff;
+  border-radius: 0 0 10px 0;
+  box-shadow: 6px 6px 46px 10px #9aff32;
+}
+
+/* --------------------------------------------------End---------------------------------------------------------- */
+#section4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 190px;
+  align-items: center;
+  background-image: url("/assets/img-02.jpg");
+  height: 100vh;
+}
+.noticias {
+  display: grid;
+  grid-gap: 10px;
+  padding: 30px;
+  overflow-y: auto;
+  border-radius: 20px;
+  width: 712px;
+  background: rgba(0, 0, 0, 0.6);
+  height: 689px;
+  padding: 20px;
+}
+.noticias::-webkit-scrollbar {
+  display: none;
+}
+.noticia-01 {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: #cccccc;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 160px;
+  border-radius: 7px;
+}
+.fecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  width: 120px;
+  background-color: bisque;
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.tipo {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.parrafo {
-  width: 60%;
-}
-.status {
-  font-size: 80px;
-  color: greenyellow;
-  font-weight: 700;
-  line-height: 99px;
-  font-family: "Ubuntu", sans-serif;
-}
 
-.three {
+.inspeccion {
   display: flex;
   flex-direction: column;
-  padding: 50px;
-  background-color: #ffffff;
-  max-width: 100%;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
   text-align: center;
-  height: 830px;
+}
+.H1-noticias {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 800;
+}
+.imagen {
+  background-size: contain;
+  width: 100%;
+  height: 89px;
 }
 
-.three-container-principal{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* ACA EMPIEZAN LOS UNICOS */
+.unicos {
+  display: grid;
+  grid-gap: 10px;
+  padding: 30px;
+  overflow-y: auto;
+  border-radius: 20px;
+  width: 512px;
+  background: rgba(0, 0, 0, 0.6);
+  height: 689px;
+  padding: 20px;
+}
+.unicos::-webkit-scrollbar {
+  display: none;
+}
+.unicos-01 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  color: #cccccc;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 140px;
+  border-radius: 7px;
 }
 
-.three-container {
+.imagenUnico {
+  width: 130px;
+  max-height: 155px;
+}
+.H3-UNIQUE {
+  font-family: "Rubik", sans-serif;
+  font-size: 31px;
+  font-weight: 700;
+  color: #9aff32;
+}
+.H3-UNIQUE:hover {
+  box-shadow: 6px 6px 46px 10px #9aff32;
+}
+
+.H1-unicos {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 800;
+}
+.vivoText {
+  color: #ffffff;
+}
+
+.vivo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: greenyellow;
+}
+.muerto {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.leyenda {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 60px;
+}
+.subir {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 70px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: rgba(245, 233, 245, 1);
+}
+#section5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  max-width: 100%;
+  height: 800px;
+}
+.formulario {
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
-  width: 500px;
+  width: 50%;
 }
-
-.three-container img {
-  width: 100%;
-  height: auto;
-  background-size: cover;
-}
-
-
-.cuatro {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: #f0f3f4;
-    max-width: 100%;
-    text-align: center;
-    height: 630px;
-  }
