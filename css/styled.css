@@ -323,9 +323,11 @@ section {
 
 /* --------------------------------------------------End---------------------------------------------------------- */
 #section4 {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
   justify-content: space-between;
-  padding: 60px 190px;
+  padding: 60px;
   align-items: center;
   background-image: url("/assets/img-02.jpg");
   height: 100vh;
@@ -336,7 +338,7 @@ section {
   padding: 30px;
   overflow-y: auto;
   border-radius: 20px;
-  width: 712px;
+  width: 100%;
   background: rgba(0, 0, 0, 0.6);
   height: 689px;
   padding: 20px;
@@ -399,7 +401,7 @@ section {
   padding: 30px;
   overflow-y: auto;
   border-radius: 20px;
-  width: 512px;
+  width: 100%;
   background: rgba(0, 0, 0, 0.6);
   height: 689px;
   padding: 20px;
@@ -431,6 +433,23 @@ section {
 }
 .H3-UNIQUE:hover {
   box-shadow: 6px 6px 46px 10px #9aff32;
+}
+
+.KILL {
+  width: 130px;
+  max-height: 155px;
+  opacity: 0.3;
+}
+.H3-KILL {
+  font-family: "Rubik", sans-serif;
+  font-size: 31px;
+  font-weight: 700;
+  color: rED;
+  opacity: 0.3;
+}
+.H3-KILL:hover {
+  box-shadow: 6px 6px 46px 10px #9aff32;
+  opacity: 0.3;
 }
 
 .H1-unicos {
@@ -470,6 +489,86 @@ section {
   border-radius: 20px;
   background-color: rgba(245, 233, 245, 1);
 }
+
+/* aca empiezan el rankgins */
+
+.rankings {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2px;
+  padding: 30px;
+  overflow-y: auto;
+  border-radius: 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  height: 689px;
+  padding: 20px;
+}
+.H1-rankings {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.rankings::-webkit-scrollbar {
+  display: none;
+}
+.rankings-01 {
+  display: grid;
+  grid-template-columns: 40px 170px 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  color: #cccccc;
+  background: rgba(23, 55, 12, 0.3);
+  width: 100%;
+  height: 50px;
+  border-radius: 0px;
+}
+
+.rankings-01-uniques {
+  display: grid;
+  grid-template-columns: 40px 170px 1fr 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  color: #cccccc;
+  background: rgba(23, 55, 12, 0.3);
+  width: 100%;
+  height: 50px;
+  border-radius: 0px;
+}
+.topcinco {
+  background-color: red;
+}
+.imagenrankings {
+  width: 40px;
+  height: 40px;
+}
+.H3-rankings {
+  font-family: "Rubik", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 5px;
+}
+.H3-Online {
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 5px;
+  color: greenyellow;
+}
+
+/* .H3-rankings:hover {
+  box-shadow: 6px 6px 46px 10px #9aff32;
+} */
+.vivotext {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+}
+
 #section5 {
   display: flex;
   justify-content: center;
@@ -482,4 +581,47 @@ section {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+#section6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  max-width: 100%;
+  height: 300px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+.footer-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.footer-02 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  font-family: "Rubik", sans-serif;
+  font-size: 60px;
+  color: #ffffff;
+}
+.footer-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  height: 100%;
 }
