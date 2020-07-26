@@ -1,0 +1,326 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+body {
+  font-family: "Rubik", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  max-height: 100vh;
+}
+
+.parallax {
+  background: #ffffff fixed no-repeat 50% 50%;
+  background-size: cover;
+}
+
+/* Aca empieza la primera seccion */
+#section1 {
+  width: 100%;
+  padding-left: 100px;
+  padding-top: 20px;
+  background-image: url("/assets/capa2.png");
+  background-position: right;
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-items: center;
+
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  width: 65%;
+}
+
+.Opciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.list {
+  display: flex;
+}
+
+.list ul {
+  display: flex;
+}
+
+.list ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+}
+
+.list ul li a:hover {
+  color: #ccc;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login img {
+  max-width: 100%;
+}
+
+.login a:hover {
+  color: #ffffff;
+}
+
+.mensajeIncial {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.H1 {
+  font-family: "Rubik", sans-serif;
+  color: #000;
+  font-size: 90px;
+  font-weight: 900;
+}
+.P {
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  color: #000;
+  width: 90%;
+}
+
+.button {
+  font-family: "Rubik", sans-serif;
+  width: 220px;
+  height: 60px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 5px;
+  /* border: 2px solid #008cba; */
+}
+
+.button:hover {
+  background-color: white;
+  color: #000;
+  margin-left: 8px;
+  border-radius: 0 0 10px 0;
+  box-shadow: 6px 6px 46px 10px rgba(245, 233, 245, 1);
+}
+
+.buttonUp {
+  font-family: "Rubik", sans-serif;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 90px;
+  height: 40px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #fa4949;
+  border-radius: 0 10px 0 0;
+  /* border: 2px solid #008cba; */
+}
+
+.buttonUp:hover {
+  background-color: white;
+  color: #fa4949;
+  margin-left: 8px;
+  border-radius: 0 0 10px 0;
+  box-shadow: 6px 6px 46px 10px rgba(245, 233, 245, 1);
+}
+
+.button-blanco {
+  font-family: "Rubik", sans-serif;
+  width: 200px;
+  height: 60px;
+  border: none;
+  color: #fa4949;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0 10px 0 0;
+  /* border: 2px solid #008cba; */
+}
+
+.button-blanco:hover {
+  background-color: #fa4949;
+  color: white;
+  margin-left: 8px;
+  border-radius: 0 0 10px 0;
+  box-shadow: 6px 6px 46px 10px #fa4949;
+}
+
+.botonenviar {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  color: #cccccc;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+.botonDescargar {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  color: #fa4949;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+.botonDescargar:hover {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  color: #cccccc;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.botonenviar:hover {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  color: #cccccc;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+/* --------------------------------------------------End---------------------------------------------------------- */
+
+/* --------------------------------------------------SEGUNDA SECCION---------------------------------------------------------- */
+#section2 {
+  display: flex;
+  background-image: url("/assets/vipfondo.png");
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 80px;
+}
+
+.mensajeVIP {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  height: 50%;
+  flex-direction: column;
+}
+
+.H1-VIP {
+  font-family: "Rubik", sans-serif;
+  color: #000;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+}
+.VIP {
+  color: #f8d804;
+}
+.P-P-VIP {
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  color: #000;
+  width: 100%;
+}
+
+/* --------------------------------------------------End---------------------------------------------------------- */
+
+/* --------------------------------------------------TERCERA SECCION---------------------------------------------------------- */
+#section3 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 40px;
+  background-color: #002650;
+  height: 800vh;
+}
+.ContainerCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #001630;
+  transition: 0.3s;
+}
+.tarjeta:hover {
+  transform: scale(1.04);
+}
+.imgTarjeta {
+  width: 100%;
+}
+
+.tarjetaBody {
+  display: grid;
+  grid-template-rows: 220px 1fr;
+  padding: 30px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.H3-tarjeta {
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.P-tarjeta {
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  color: #f8d804;
+  font-weight: 600;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.P-price {
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  color: #ccc;
+  font-weight: 600;
+}

@@ -25,10 +25,7 @@
       rel="stylesheet"
       id="bootstrap-css"
     />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"
-    ></script>
+
   </head>
   <body>
     <!-- Modal -->
@@ -179,15 +176,15 @@
 
 
     <section class="parallax" id="section1">
-      <header class="header">
-        <div class="logo">
+      <header class="header fadeEffect ">
+        <div class="logo fadeEffect">
           <img src="/assets/LogoBlanco.png" alt="Logo" />
         </div>
 
-        <nav class="list">
+        <nav class="list fadeEffect">
           <ul>
             <li><a href="#section3">INFORMACIÓN</a></li>
-            <li><a href="#">TIENDA ONLINE</a></li>
+            <li><a href="./tienda.html">COMPRAS</a></li>
             <li><a href="#section4">NOTICIAS</a></li>
             <li><a href="#section5">SOPORTE</a></li>
             <li>
@@ -208,7 +205,7 @@
           </ul>
         </nav>
 
-        <div class="login">
+        <div class="login fadeEffect" >
           <img src="/assets/Avatar.png" alt="" />
           <a href="#" data-toggle="modal" data-target="#exampleModalCenter"
             >INGRESA
@@ -216,7 +213,7 @@
         </div>
       </header>
 
-      <div class="mensajeIncial">
+      <div class="mensajeIncial fadeEffect">
         <h1 class="H1">
           VUELVE AL JUEGO
         </h1>
@@ -230,6 +227,8 @@
           <a class="botonenviar" href="#section2">EMPEZAR</a>
         </button>
       </div>
+
+
     </section>
     <section class="parallax" id="section2">
       <div class="welcome">
@@ -515,10 +514,9 @@
       title="Your browser does not support the <video> tag">
   </video> -->
     <!-- </section> -->
-<button class="buttonUp" type="button">
-  <a class="botonenviar" href="#section1">Subir</a>
+<button class="buttonUp fadeEffect" type="button">
+  <a class="botonenviar fadeEffect" href="#section1">Subir</a>
 </button>
-
 
 <section class="parallax" id="section5">
         <div class="formulario">
@@ -567,31 +565,6 @@
 <div id="paypal-button-container"></div>
 <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
   data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-    style: {
-      shape: 'pill',
-      color: 'black',
-      layout: 'vertical',
-      label: 'paypal',
-
-    },
-    createOrder: function (data, actions) {
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: '1'
-          }
-        }]
-      });
-    },
-    onApprove: function (data, actions) {
-      return actions.order.capture().then(function (details) {
-        alert('Transaction completed by ' + details.payer.name.given_name + '!');
-      });
-    }
-  }).render('#paypal-button-container');
-</script>
 
 
 
@@ -618,6 +591,5 @@
       crossorigin="anonymous"
     ></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
   </body>
 </html>
